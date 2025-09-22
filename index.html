@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Company Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #163832;
+            color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        h1.company-name {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        p.mission {
+            font-size: 1rem;
+            /* smaller (~16px) */
+            font-weight: 300;
+            /* thin/light */
+            line-height: 1.6;
+            /* add breathing room */
+            /* color: #555; */
+            /* softer gray for elegance */
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .footer {
+            font-size: 0.9rem;
+            color: #f9f9f9;
+            margin-top: 3rem;
+        }
+
+        .footer a {
+            color: #f9f9f9;
+
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="./logo.png" alt="Company Logo" class="logo">
+
+
+        <h1 class="company-name">Pocket Biosciences</h1>
+
+
+        <p class="mission">
+            We are building AI systems to design new-to-nature biochemical pathways and enzymes from the ground up,
+            going beyond evolution-based engineering methods. Our focus is on addressing the climate crisis by enabling
+            sustainable chemicals, advanced materials, and scalable bioremediation.
+        </p>
+
+
+        <div class="footer">
+            <p> <a href="mailto:contact@pocketbio.tech">contact@pocketbio.tech</a> </p>
+        </div>
+    </div>
+</body>
+
+</html>
